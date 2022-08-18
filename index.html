@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hosmi Romantic</title>
+</head>
+<body>
+    <h1>Voce aceita namorar comigo ?</h1>
+    <div id="box">
+    <button id="botao" class="button button1">Nao</button>
+    <button class="button button2">Sim</button>
+    </div>
+    <div>
+        <audio id="myAudio">
+        <source src="musica/Song.mp3" type="audio/ogg">
+        <source src="musica/Song.ogg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+    <button class="button3" onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+    </div id="Play">
+    <script src="script.js"></script>
+</body>
+</html>
