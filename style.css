@@ -12,7 +12,6 @@ h1 {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
 }
 
 #box {
@@ -34,3 +33,15 @@ h1 {
 #Play {
     align-items: center;
 }
+
+#no {
+    position: absolute;
+    width: 4rem;
+    height: 3rem;
+    top: 60%;
+    right: 15%;
+    background-color: #e63939;
+    border: 0.02px solid black;
+    border-radius: 10%;
+    margin: 4px 2px;
+  }
