@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,40 @@
     <link rel="stylesheet" href="style.css">
     <title>Hosmi Romantic</title>
 </head>
+
 <body>
-    <h1>Voce aceita namorar comigo ?</h1>
-    <h2 style="text-align: center;">Antes de decidir toque a musica por favor!</h2>
-    <div style="text-align: center;">
-    <button class="button3" onclick="playAudio()" type="button">Play Audio</button>
-    <button onclick="pauseAudio()" type="button">Pause Audio</button>
-    <br>
-    <br>
-    <div id="box">
-    <button id="no">Nao</button>
-    <button class="button button2">Sim</button>
-</div>
-    <div>
-        <audio id="myAudio">
-        <source src="musica/Song.mp3" type="audio/ogg">
-        <source src="musica/Song.ogg" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-    
     </div id="Play">
-    <script src="script.js"></script>
-</body>
+    <h1>Voce aceita namorar comigo ?</h1>
+    <h2>Antes de decidir toque a musica por favor!</h2>
+    <div class="audio">
+        <button onclick="playAudio()" type="button">Play Audio</button>
+        <button onclick="pauseAudio()" type="button">Pause Audio</button><br><br>
+
+        <div id="box">
+            <button id="no">Nao</button>
+            <button id="myBtn">Sim</button>
+        </div>
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>SABIA QUE NAO IRIA ME REJEITAR!</p>
+        </div>
+    
+    </div>
+
+        <div>
+            <audio id="myAudio">
+                <source src="musica/Song.mp3" type="audio/ogg">
+                <source src="musica/Song.ogg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </body>
+        <script src="script.js"></script>
 </html>
